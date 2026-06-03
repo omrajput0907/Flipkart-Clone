@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#nav_bar {
+    background-color: white;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+#flipkart {
+    padding: 10px;
+    background-color: #FFE51F;
+    border: 0;
+    border-radius: 10px;
+    width: 120px;
+}
+
+#flipkart_icon_nav {
+
+    border: 0;
+    border-radius: 10px;
+    height: 15px;
+    width: 15px;
+}
+
+#travel {
+    background-color: #F0F0F0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    border: 0;
+}
+
+#search_bar {
+    width: 800px;
+    height: 50px;
+    margin: 10px;
+    border: 2px solid#2EA1FF;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+form {
+    /* border :2px solid; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#search_div_right {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid blue; */
+    padding: 10px;
+    width: 300px;
+}
+
+#login_div {
+    /* border:2px solid; */
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+}
+
+#login_div img {
+    width: 35px;
+}
+
+#more_div {
+    text-align: center;
+    padding: 10px;
+}
+
+#cart_div {
+    text-align: center;
+    padding: 10px;
+}
+
+#category {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category_button {
+    font-size: 18px;
+    height: 30px;
+    border: 0;
+    background-color: white;
+}
+
+#highlight_product img {
+    width: auto;
+    height: 240px;
+    border-radius: 10px;
+    margin: 5px;
+
+}
+
+#highlight_product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    overflow-x: scroll;
+}
+
+.Still_looking {
+    background-color: #F9D350;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.Still_looking h1 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.Still_looking_div {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.Still_looking_img_1 img {
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid snow;
+    height: 240px;
+}
+
+#flipkart_footer {
+    background-color: #172337;
+    color: #ffffff;
+    margin-top: 24px;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 36px 28px;
+}
+
+.footer_col {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer_col h4 {
+    margin: 0 0 6px;
+    color: #878787;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer_col a,
+.footer_col p {
+    margin: 0;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.footer_col a:hover {
+    text-decoration: underline;
+}
+
+.border_left {
+    border-left: 1px solid #454d5e;
+    padding-left: 16px;
+}
+
+.footer_bottom {
+    border-top: 1px solid #454d5e;
+    padding: 18px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+
+    #nav_bar,
+    #search_bar {
+        width: 100%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    #search_div_right {
+        width: 100%;
+    }
+
+    .footer_col {
+        width: 45%;
+    }
+
+    .border_left {
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer_col {
+        width: 100%;
+    }
+
+    .footer_bottom {
+        justify-content: flex-start;
+    }
+}
